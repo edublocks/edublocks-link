@@ -7,6 +7,18 @@ if [ $(whoami) == "root" ]; then
   exit 1
 fi
 
+if [ -d /opt/edublocks-link ]; then
+  echo
+  echo "Removing temp extract..."
+  sudo rm -rf /opt/edublocks-link
+fi
+
+if [ -d edublocks-link ]; then
+  echo
+  echo "Removing temp extract..."
+  rm -rf edublocks-link
+fi
+
 echo
 echo "Downloading Package..."
 wget https://github.com/edublocks/edublocks-link/releases/latest/download/edublocks-link-armv7l.tar.gz
@@ -26,16 +38,10 @@ sudo mv ~/edublocks-link /opt
 sudo cp /opt/edublocks-link/app/edublocks-link.png /usr/share/icons/hicolor/scalable/apps/edublocks-link.png
 sudo cp /opt/edublocks-link/app/edublocks-link.desktop /usr/share/applications
 sudo rm -f /usr/local/bin/edublocks-link
-sudo ln -s /opt/edublocks-link/scripts/start.sh $/usr/local/bin/edublocks-link
+sudo ln -s /opt/edublocks-link/scripts/start.sh /usr/local/bin/edublocks-link
 
 if [ -f edublocks-link-armv7l.tar.gz ]; then
   echo
   echo "Removing temp download..."
   rm -f edublocks-link-armv7l.tar.gz
-fi
-
-if [ -d edublocks ]; then
-  echo
-  echo "Removing temp extract..."
-  rm -rf edublocks-link
 fi
