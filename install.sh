@@ -23,7 +23,7 @@ sudo pip3 install python-sonic blinkt explorerhat "ipython==6.0.0" cs20-microbit
 echo
 echo "Installing EduBlocks Link..."
 sudo mkdir /opt/edublocks-link
-sudo cp -r ~/edublocks-link /opt/edublocks-link
+sudo mv ~/edublocks-link /opt
 sudo cp /opt/edublocks-link/app/edublocks-link.png /usr/share/icons/hicolor/scalable/apps/edublocks-link.png
 sudo cp /opt/edublocks-link/app/edublocks-link.desktop /usr/share/applications
 sudo rm -f /usr/local/bin/edublocks-link
