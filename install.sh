@@ -33,8 +33,7 @@ echo "Installing EduBlocks Link..."
 sudo mv ~/edublocks-link /opt
 sudo cp /opt/edublocks-link/app/edublocks-link.png /usr/share/icons/hicolor/scalable/apps/edublocks-link.png
 sudo cp /opt/edublocks-link/app/edublocks-link.desktop /usr/share/applications
-sudo rm -f /usr/local/bin/edublocks-link
-sudo ln -s /opt/edublocks-link/scripts/start.sh /usr/local/bin/edublocks-link
+sudo chmod +x /opt/edublocks-link/scripts/start.sh
 
 if [ -f edublocks-link-armv7l.tar.gz ]; then
   echo

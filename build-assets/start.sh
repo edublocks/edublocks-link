@@ -1,2 +1,1 @@
-cd ..
-./node index.js
+/opt/edublocks-link/node /opt/edublocks-link/index.js
