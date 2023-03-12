@@ -8,14 +8,10 @@ if [ $(whoami) == "root" ]; then
 fi
 
 if [ -d /opt/edublocks-link ]; then
-  echo
-  echo "Removing temp extract..."
   sudo rm -rf /opt/edublocks-link
 fi
 
 if [ -d edublocks-link ]; then
-  echo
-  echo "Removing temp extract..."
   rm -rf edublocks-link
 fi
 
