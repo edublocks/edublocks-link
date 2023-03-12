@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=0.1.0
+Name=EduBlocks Link
+Comment=Blocks to Text Programming Made Easy
+Exec=edublocks-link
+Icon=/usr/share/icons/hicolor/scalable/apps/edublocks-link.png
+Terminal=true
+Type=Application
+Categories=Development
