@@ -9,7 +9,7 @@ fi
 
 echo
 echo "Downloading Package..."
-wget https://github.com/edublocks/edublocks-link/releases/latest/edublocks-link-armv7l.tar.gz
+wget https://github.com/edublocks/edublocks-link/releases/latest/download/edublocks-link-armv7l.tar.gz
 
 echo
 echo "Extracting Package..."
