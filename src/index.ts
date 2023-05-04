@@ -24,6 +24,7 @@ const expressApp: Express = express();
 const { app } = expressWs(expressApp);
 
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 
 let proc = initProcess("ipython3", []);
